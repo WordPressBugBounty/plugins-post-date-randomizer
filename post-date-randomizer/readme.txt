@@ -2,65 +2,92 @@
 Plugin Name: Post Date Randomizer
 Author: anty
 Contributors: wellbeingtips
-Tags: post dates, random post, random dates, random post dates
-Requires at least: 3.6
-Tested up to: 5.8
-Stable tag: 1.3
+Donate link: https://www.paypal.com/paypalme/wellbeingsupport/
+Tags: post dates, comment dates, random dates, random post dates, random comment dates, bulk edit, schedule posts
+Requires at least: 5.0
+Tested up to: 6.7
+Stable tag: 1.4.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Simple plugin that changes the date/s of all published posts to any random date in the past or future. Visit "Post Date Randomizer" setting in the dasboard meny to set up the date range.
+Simple plugin that bulk changes the publication date of published posts and/or approved comments to random dates within a specified time range. Configure options in the "Date Randomizer" settings page in the WordPress dashboard menu.
 
 == Description ==
 
-Simple plugin that bulk changes the date/s of all published posts to any random date in the past or future. It comes with simple (but powerfull) "Post Date Randomizer" setting where you can set the time range for the post randomization and the post type (auto detects all post types existing on your website). It supports all time ranges from past or future. Post whith dates in the future will be sheduled.
+Post Date Randomizer allows you to bulk change the publication dates of your content to random dates within a specific time range you define. You can choose to randomize dates for published posts, pages, products, custom post, approved comments, or both.
+
+It comes with a simple but powerful settings page ("Date Randomizer" in the admin menu) where you can:
+
+*   Select whether to randomize posts, comments, or both.
+*   Set the start and end dates for the randomization range (past or future).
+*   For posts, choose the specific post type to affect (auto-detects public post types like posts, pages, products, etc.).
+*   For posts, optionally set the "Last Modified" date to match the new random "Published" date.
+
+It supports any date range. Posts with dates randomized to the future will be automatically scheduled for publication. Comment dates are simply updated to the random date within the selected range.
+
+**Important:** This plugin performs irreversible changes to your post and comment dates. Always back up your database before use! If you find this plugin useful, please consider making a donation to support its development.
 
 = Key Features: =
 
-* Add random dates to all your published posts, pages, custom post types, products.
-* Option to setup the time range for post randomization
-* It can be used to Shedule all your published posts if you setup dates that are in the future.
-
+*   Bulk randomize dates for published posts (of a selected post type) and/or approved comments.
+*   Choose to randomize only posts, only comments, or both simultaneously.
+*   Set a specific date and time range (past or future) for the randomized dates.
+*   Automatically schedules posts if their new random date is in the future.
+*   Optionally update the post "Last Modified" date to match the new "Published" date.
+*   Auto-detects all public post types for selection.
+*   Simple settings interface integrated into the WordPress dashboard.
+*   Includes donation links to support the plugin author.
 
 == Installation ==
 
-* Download the plugin
-* Upload the folder "post-date-randomizer" to wp-content/plugins (or upload a zip through the Wordpress admin)
-* Activate and enjoy!
+1.  Download the plugin ZIP file.
+2.  Log in to your WordPress admin area and go to Plugins > Add New.
+3.  Click "Upload Plugin" and choose the ZIP file you downloaded.
+4.  Activate the plugin through the 'Plugins' menu in WordPress.
+5.  Go to the "Date Randomizer" menu item in your dashboard to configure the settings.
+6.  **BACK UP YOUR DATABASE!**
+7.  Configure your desired date range and options, click "Save Settings".
+8.  Click the "Randomize Selected Item Dates Now" button to perform the randomization.
 
-== In which WordPress version this Plugin is compatible? ==
+== Compatibility ==
 
-It is compatible from 3.8 to 5.8 WordPress version.
+Recommended for WordPress 5.0 and higher. Tested up to WordPress 6.7.
 
 == Warning ==
 
-The date/s change is not revertable. Please backup your website before you use it.
+The date changes performed by this plugin are **NOT REVERSIBLE** through the plugin interface. Please **backup your WordPress database** before you use this plugin. The authors are not responsible for any data loss. Use at your own risk.
 
 == Upgrade Notice ==
 
-Automatic updates should work great for you.  As always, though, we recommend backing up your site prior to making any updates just to be sure nothing goes wrong.
+Automatic updates should work correctly. As always, we strongly recommend backing up your site (files and database) before updating any plugin, including this one.
 
 == Changelog ==
 
+= 1.4.1 - [Your Current Date, e.g., 15.05.2024] =
+*   Enhancement: Added donation links (readme header, settings page, plugin actions).
+*   Code: Minor code cleanup and version bump.
+
+= 1.4.0 - [Previous Date] =
+*   Enhancement: Added option to randomize Approved Comment dates alongside Post dates.
+*   Enhancement: Added checkboxes to select whether to randomize Posts, Comments, or both.
+*   Enhancement: Settings UI improvements - post-specific options conditionally shown (requires JavaScript).
+*   Enhancement: Improved feedback mechanism using transients and redirects.
+*   Enhancement: Switched randomization trigger to 'admin_action' hook.
+*   Enhancement: Added basic date validation for start/end range.
+*   Fix: Now correctly randomizes only 'publish' status posts.
+*   Code: Refactored settings registration and handling. Added basic sanitization.
+*   Readme: Updated description, features, compatibility, and instructions.
+
 = 1.3 - 12.11.2021 =
-
-Enhancements:
-
-* compatibility test.
+*   Enhancements: Compatibility test.
 
 = 1.2 - 11.09.2019 =
-
-Enhancements:
-
-* Option to also set the modified date to be the same as the published date. Thanks to @reflectivechimp
+*   Enhancements: Option to also set the modified date to be the same as the published date. Thanks to @reflectivechimp
 
 = 1.1 - 22.10.2018 =
-
-Enhancements:
-
-* Added fuctionalit for all post types
-* Gutenberg tested
-* Description improved
+*   Enhancements: Added functionality for all post types
+*   Enhancements: Gutenberg tested
+*   Enhancements: Description improved
 
 = 1.0 - 12.07.2017 =
-* Initial release
+*   Initial release
