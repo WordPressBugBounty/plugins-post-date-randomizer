@@ -63,11 +63,11 @@ Automatic updates should work correctly. As always, we strongly recommend backin
 
 == Changelog ==
 
-= 1.4.1 - [Your Current Date, e.g., 15.05.2024] =
+= 1.4.1 - [06.04.2025] =
 *   Enhancement: Added donation links (readme header, settings page, plugin actions).
 *   Code: Minor code cleanup and version bump.
 
-= 1.4.0 - [Previous Date] =
+= 1.4.0 - [05.04.2025] =
 *   Enhancement: Added option to randomize Approved Comment dates alongside Post dates.
 *   Enhancement: Added checkboxes to select whether to randomize Posts, Comments, or both.
 *   Enhancement: Settings UI improvements - post-specific options conditionally shown (requires JavaScript).
